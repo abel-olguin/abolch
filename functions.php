@@ -5,6 +5,7 @@
 
 
 use Abolch\App\Abolch;
+use Abolch\App\Menu;
 use Abolch\App\Pages;
 use Abolch\App\ThemeSupport;
 
@@ -15,6 +16,7 @@ require_once( __DIR__ . '/App/Pages.php' );
 require_once( __DIR__ . '/App/Menu.php' );
 
 new Abolch();
+new Menu();
 new ThemeSupport();
 new Pages();
 

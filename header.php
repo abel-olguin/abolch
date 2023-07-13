@@ -16,4 +16,5 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<?php Abolch\App\Menu::render( 'primary', 'default' ); ?>
 <main id="main-content" class="site">

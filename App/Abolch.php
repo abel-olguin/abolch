@@ -6,9 +6,6 @@ class Abolch {
 	public function __construct() {
 		add_action( 'wp_enqueue_scripts', [ $this, 'themeScripts' ] );
 		add_action( 'after_setup_theme', [ $this, 'addMenu' ] );
-		add_action( 'init', function () {
-			do_action( 'abolch_entra_el_tema', 'primer argumento', 'segundo', 'tercero' );
-		} );
 	}
 
 	public function addMenu() {
